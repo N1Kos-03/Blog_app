@@ -1,18 +1,24 @@
-import type { Metadata } from "next";
+import "./globals.css";
+import { ReactNode } from "react";
+import { Open_Sans } from "next/font/google";
 
-export const metadata: Metadata = {
-  title: "Мой блог",
-  description: "Блог о разработке и технологиях",
+const openSans = Open_Sans({
+  subsets: ["latin"],
+});
+
+export const metadata = {
+  title: "MyTop - наш лучший топ",
+  description: "Блог о разработке",
 };
 
-export default function RootLayout({
+export default function MyApp({
   children,
 }: {
-  children: React.ReactNode
+  children: ReactNode;
 }) {
   return (
     <html lang="ru">
-      <body>
+      <body className={openSans.className}>
         {children}
       </body>
     </html>
