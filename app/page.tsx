@@ -1,6 +1,7 @@
 import { PostCard } from "../components/PostCard/PostCard";
+import { withLayout } from "../layout/Layout";
 
-export default function Home() {
+function Home() {
   return (
     <div>
       <PostCard
@@ -14,3 +15,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default withLayout(Home);

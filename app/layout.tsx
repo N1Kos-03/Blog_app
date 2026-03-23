@@ -7,7 +7,7 @@ const openSans = Open_Sans({
 });
 
 export const metadata = {
-  title: "MyTop - наш лучший топ",
+  title: "my_blog - мой лучший блог",
   description: "Блог о разработке",
 };
 
