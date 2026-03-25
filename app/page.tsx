@@ -1,9 +1,9 @@
 import { PostCard } from "../components/PostCard/PostCard";
-import { withLayout } from "../layout/Layout";
+
 
 function Home() {
   return (
-    <div>
+    <>
       <PostCard
         category="Front-end"
         date="1 месяц назад"
@@ -12,8 +12,40 @@ function Home() {
         readingTime="3 минуты"
         likes={4}
       />
-    </div>
+       <PostCard
+        category="Front-end"
+        date="1 месяц назад"
+        title="Как работать с CSS Grid"
+        description="Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы.."
+        readingTime="3 минуты"
+        likes={4}
+      />
+       <PostCard
+        category="Front-end"
+        date="1 месяц назад"
+        title="Как работать с CSS Grid"
+        description="Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы.."
+        readingTime="3 минуты"
+        likes={4}
+      />
+       <PostCard
+        category="Front-end"
+        date="1 месяц назад"
+        title="Как работать с CSS Grid"
+        description="Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы.."
+        readingTime="3 минуты"
+        likes={4}
+      />
+       <PostCard
+        category="Front-end"
+        date="1 месяц назад"
+        title="Как работать с CSS Grid"
+        description="Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы.."
+        readingTime="3 минуты"
+        likes={4}
+      />
+    </>
   );
 }
 
-export default withLayout(Home);
+export default Home;

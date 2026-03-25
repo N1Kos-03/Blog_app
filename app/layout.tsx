@@ -1,6 +1,7 @@
 import "./globals.css";
 import { ReactNode } from "react";
 import { Open_Sans } from "next/font/google";
+import { Header } from "@/layout/Header/Header"; 
 
 const openSans = Open_Sans({
   subsets: ["latin"],
@@ -11,15 +12,14 @@ export const metadata = {
   description: "Блог о разработке",
 };
 
-export default function MyApp({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function MyApp({ children }: { children: ReactNode }) {
   return (
     <html lang="ru">
       <body className={openSans.className}>
-        {children}
+        <Header />
+        <main className="main">
+          {children}
+        </main>
       </body>
     </html>
   );
