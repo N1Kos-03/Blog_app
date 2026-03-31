@@ -15,17 +15,7 @@
   background-color: var(--background);
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 800px;
-  min-height: 100vh;
-  padding: 120px 60px;
-  background-color: var(--foreground);
-}
+
 
 .intro {
   display: flex;

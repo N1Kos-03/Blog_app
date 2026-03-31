@@ -22,4 +22,9 @@
   margin: 3px 5px;
 }
 
+.read {
+  display: flex;
+  gap: 5px;
+  color: #1473E6;
+}
 

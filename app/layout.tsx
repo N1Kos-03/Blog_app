@@ -17,7 +17,7 @@ export default function MyApp({ children }: { children: ReactNode }) {
     <html lang="ru">
       <body className={openSans.className}>
         <Header />
-        <main className="main">
+        <main className="main" >
           {children}
         </main>
       </body>
