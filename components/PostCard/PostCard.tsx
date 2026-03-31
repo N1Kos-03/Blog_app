@@ -36,11 +36,6 @@ export const PostCard = ({
         </span>
 
         <div className={styles.likes}>
-          <LikeButton
-            postId={1}
-            initialLikes={likes}
-            onChange={setLikesCount}
-          />
           <LikeCounter count={likesCount} />
         </div>
       </div>
@@ -50,7 +45,7 @@ export const PostCard = ({
 
       <div className={styles["card-footer"]}>
         <span>{readingTime}</span>
-        <a href="#">
+        <a href="#" className={styles.read}>
           Читать <img src="/arrow.svg" alt="стрелка" />
         </a>
       </div>
